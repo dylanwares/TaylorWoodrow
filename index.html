@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<style>
+    body {
+      margin: 0;
+    }
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 25%;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+    
+    li a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: #004287;
+      color: white;
+    }
+    </style>
+
+<ul>
+    <img src="logo.jpg" alt="logo" width="100%" height="120">
+    <li><a href="#about">Submit</a></li>
+    <form action="/action_page.php">
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+  </ul>
+  
+  <div style="margin-left:25%;padding:1px 16px;height:1000px;">    
+
+<head>
+  <title>Drag and Drop File Upload</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <div class="drop-zone">
+    <span class="drop-zone__prompt">Drop file here or click to upload</span>
+    <input type="file" name="myFile" class="drop-zone__input" />
+  </div>
+
+  <script src="main.js"></script>
+
+  <form action="/action_page.php">
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="opel">Opel</option>
+      <option value="audi">Audi</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</div>
