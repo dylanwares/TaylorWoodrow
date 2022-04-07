@@ -1,83 +1,119 @@
-    <style>
-    body {
-      margin: 0;
-    }
-    
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 25%;
-      background-color: #f1f1f1;
-      position: fixed;
-      height: 100%;
-      overflow: auto;
-    }
-    
-    li a {
-      display: block;
-      color: #000;
-      padding: 8px 16px;
-      text-decoration: none;
-    }
-    
-    li a.active {
-      background-color: #04AA6D;
-      color: white;
-    }
-    
-    li a:hover:not(.active) {
-      background-color: #004287;
-      color: white;
-    }
-    </style>
-
-<ul>
-    <img src="logo.jpg" alt="logo" width="100%" height="120">
-    <li><a href="#about">Submit</a></li>
-    <form action="/action_page.php">
-        <label for="cars">Dropdown menu 1</label>
-        <select name="cars" id="cars">
-          <option value="volvo">Option 1</option>
-          <option value="saab">Option 2</option>
-          <option value="opel">Option 3</option>
-          <option value="audi">Option 4</option>
-        </select>
-  </ul>n  
-  
-  <div style="margin-left:25%;padding:1px 16px;height:1000px;">    
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>Drag and Drop File Upload</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="utf-8" />
-  <link rel="shortcut icon" href="/assets/favicon.ico" />
-  <link rel="stylesheet" href="main.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dragdrop.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Upload</title>
 </head>
 
 <body>
-  <div class="drop-zone">
-    <span class="drop-zone__prompt">Drop file here or click to upload</span>
-    <input type="file" name="myFile" class="drop-zone__input" />
-  </div>
-
-  <script src="main.js"></script>
-
-  <form action="/action_page.php">
-    <label for="cars">Some option</label>
-    <select name="cars" id="cars">
-      <option value="volvo">Option 1</option>
-      <option value="saab">Option 2</option>
-      <option value="opel">Option 2</option>
-      <option value="audi">Option 4</option>
-    </select>
-    <br><br>
-  </form>
-</body>
-</div>
-
-  <div>
-    <div>
-        
+  <h1>Taylor Woodrow Knowledge Management System</h1>
+  <div id="page">
+    <div class="container">
+      <h3>Please fill in below mandate fields before submit</h3>
+      <label>Reviewer email address</label>
+      <input placeholder="Please give reviewers email address">
+      <label>Information description</label>
+      <textarea placeholder="Please Give Short Summary of Uploading File"></textarea>
+      <label>Activity / Element</label>
+      <select name="cars" class="dropdown">
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+        <option value="Option 3">Option 2</option>
+        <option value="Option 4">Option 4</option>
+      </select>
+    </div>
+    <div class="container">
+      <div class="drop-zone">
+        <span class="drop-zone__prompt">Drop file here or click to upload</span>
+        <input type="file" name="myFile" class="drop-zone__input" />
+      </div>
+      <div class="subcontainer">
+        <input placeholder="Please give proper filename">
+      </div>
+      <div style="margin-top: 25px;">
+        <button style="background-color: #beefc7">Submit</button>
+        <button style="background-color: #dfdfaf">Clear all</button>
+      </div>
+    </div>
+    <div class="container" style="width: 30%">
+      <h2><u>Data Taxonomy</u></h2>
+      <div class="subcontainer" style="flex-direction: row;">
+        <div class="subcontainer">
+          <label>1. Project Code</label>
+          <select class="dropdown">
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 2</option>
+            <option value="Option 4">Option 4</option>
+          </select>
+          <label>2. Project Name</label>
+          <select class="dropdown">
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 2</option>
+            <option value="Option 4">Option 4</option>
+          </select>
+          <label>3. Client</label>
+          <select class="dropdown">
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 2</option>
+            <option value="Option 4">Option 4</option>
+          </select>
+          <label>4. Discipline</label>
+          <select class="dropdown">
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 2</option>
+            <option value="Option 4">Option 4</option>
+          </select>
+          <label>5. Sector</label>
+          <select class="dropdown">
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 2</option>
+            <option value="Option 4">Option 4</option>
+          </select>
+          <label>Project Start Date</label>
+          <input type="datetime-local">
+        </div>
+        <div class="subcontainer">
+          <label>6. Work Type</label>
+          <select class="dropdown">
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 2</option>
+            <option value="Option 4">Option 4</option>
+          </select>
+          <label>7. Information Segment</label>
+          <select class="dropdown">
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 2</option>
+            <option value="Option 4">Option 4</option>
+          </select>
+          <label>8. Material / Other</label>
+          <select class="dropdown">
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 2</option>
+            <option value="Option 4">Option 4</option>
+          </select>
+          <label>9. Tags / Keywords / Labels</label>
+          <textarea></textarea>
+          <label>Project Completion Date</label>
+          <input type="datetime-local">
+        </div>
+      </div>
     </div>
   </div>
+</body>
+<script>src = "dragdrop.js"</script>
+<script>src = "main.js"</script>
+
+</html>
